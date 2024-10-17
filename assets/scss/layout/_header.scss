@@ -1,0 +1,86 @@
+@use "../abstract/mixin.scss" as m;
+@use "../abstract/variable" as v;
+@use "../base/font";
+
+header {
+    background-image: url(../img/banner_bg.jpg);
+}
+
+#nav {
+    h1 {
+        font-family: 'black';
+        color: v.$blanc;
+        font-size: 25px;
+
+        span {
+            color: v.$titre_orange;
+            font-size: 30px;
+        }
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 1rem;
+
+        ul {
+            display: flex;
+
+            li {
+                margin-left: 3rem;
+                font-size: 13px;
+
+                a {
+                   color: v.$blanc;
+                }
+            }
+        }
+    }
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15rem;
+
+    h2 {
+        font-size: 30px;
+        color: v.$blanc;
+        font-weight: 100;
+        margin-top: 15rem;
+
+        .bleu {
+            color: v.$titre_bleu;
+            font-family: 'bold';
+        }
+
+        .orange {
+             color: v.$titre_orange;
+             font-family: 'bold';
+        }
+    }
+
+    p {
+        width: 500px;
+        color: v.$blanc;
+        margin-top: 1rem;
+    }
+
+    a {
+        margin-top: 2rem;
+        color: v.$noir;
+        background-color: white;
+        border-radius: 50px;
+        padding: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-weight: 800;
+        font-size: small;
+        letter-spacing: 1px;        
+    }
+}
