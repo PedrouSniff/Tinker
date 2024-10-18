@@ -4,7 +4,11 @@
 
 header {
     background-image: url(../img/banner_bg.jpg);
+    background-position: center;
+    background-size: cover;
 }
+
+///////// Navigation /////////
 
 #nav {
     h1 {
@@ -36,10 +40,16 @@ header {
                 a {
                    color: v.$blanc;
                 }
+
+                a:hover {
+                    color: v.$titre_bleu
+                }
             }
         }
     }
 }
+
+///////// Bannière /////////
 
 #banner {
     display: flex;
@@ -82,5 +92,9 @@ header {
         font-weight: 800;
         font-size: small;
         letter-spacing: 1px;        
+    }
+
+    a:hover {
+        color: v.$titre_orange
     }
 }

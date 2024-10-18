@@ -1,2 +1,158 @@
 @use "../abstract/variable" as v;
 @use "../abstract/mixin" as m;
+
+///////// Footer /////////
+
+#contact {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: v.$blanc;
+    background-color: rgb(87, 87, 87);
+
+    h2 {
+        font-weight: 800;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+
+    p {
+        padding-left: 25rem;
+        padding-right: 25rem;
+    }
+    
+    .trait {
+        height: 1px;
+        width: 20rem;
+        background-color: v.$blanc;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        color: v.$blanc;
+        background-color: v.$fond_bleu;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 50px;
+    }
+
+    a:hover {
+        color: v.$noir;
+    }
+}
+
+#map {
+    iframe {
+        width: 100%;
+        background-color: rgb(87, 87, 87);
+    }
+}
+
+///////// Footer  bas/////////
+
+#footernav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(87, 87, 87);
+    color: v.$blanc;
+    align-items: center;
+    padding-bottom: 5rem;
+
+    .orange {
+        color: v.$titre_orange;
+    }
+
+    .titre {
+        font-size: 25px;
+        font-family: 'black';
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    .copy {
+        margin-top: 4rem;
+    }
+
+    .location {
+        margin-top: 4rem;
+
+        h3 {
+            margin-bottom: 2rem;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .loca {
+        display: flex;
+    }
+
+    .trait {
+        height: 3rem;
+        width: 1px;
+        background-color: rgb(138, 138, 138);
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .rue p {
+        margin-bottom: 10px;    
+    }
+
+    .tel {
+        margin-top: 4rem;
+        h3 {
+            margin-bottom: 2rem;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin-bottom: 10px;
+
+            .bold {
+                font-weight: 800;
+            }
+        }
+    }
+
+    .reseaux {
+        margin-top: 3rem;
+        h3 {
+            margin-bottom: 2rem;
+            font-size: 15px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                margin-right: 5px;
+                a {
+                    i{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: v.$blanc;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        color: rgb(87, 87, 87);
+                    }
+                
+                    i:hover {
+                        color: v.$fond_bleu;
+                    }
+                }
+            }
+        }
+    }
+}
