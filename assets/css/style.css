@@ -122,19 +122,26 @@ header {
   margin-right: 1rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
 }
 #CARDS div .trait {
   background-color: white;
   height: 1px;
   margin-top: 2rem;
 }
-#CARDS div img {
+#CARDS div .back {
   background-color: #F5C45D;
   border: solid white 5px;
-  border-radius: 100px;
-  padding: 2rem;
-  margin-top: 12rem;
-  margin-bottom: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
 }
 #CARDS div h3 {
   font-weight: 600;
@@ -191,12 +198,18 @@ header {
 #gallery .our_gallery ul li {
   margin-top: 1rem;
 }
-#gallery .our_gallery ul li :hover {
-  color: black;
-}
 #gallery .our_gallery ul li a {
   color: white;
   font-weight: 600;
+}
+#gallery .our_gallery ul li a:hover {
+  color: black;
+}
+#gallery .our_gallery ul li:first-child a {
+  color: #F5C45D;
+}
+#gallery .our_gallery ul li:first-child a:hover {
+  color: black;
 }
 
 .grid {
@@ -278,8 +291,7 @@ header {
   flex-direction: column;
 }
 #blog .fond_noir {
-  background-color: black;
-  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.603);
 }
 #blog h3 {
   margin-left: 5rem;
@@ -319,28 +331,23 @@ header {
   color: #3DC1CD;
 }
 #blog article {
-  margin-top: 3rem;
-  margin-left: 3rem;
+  background-color: white;
+  margin: 3rem 5rem;
 }
 #blog article img {
-  height: 20rem;
-  background-color: white;
   margin: 0;
   padding: 0;
-  width: 70%;
+  margin-bottom: -4px;
+  width: 100%;
 }
 #blog article div {
-  background-color: white;
-  margin-right: 7rem;
-  margin-bottom: 5rem;
-  max-width: 70%;
+  width: 90%;
+  margin: 3% 5%;
+  height: 5rem;
 }
 #blog article div p {
   color: black;
   margin: 0;
-  margin-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 #blog article div .bleu {
   margin-bottom: 0rem;
@@ -349,8 +356,6 @@ header {
 #blog article div h3 {
   color: black;
   margin: 0;
-  margin-top: 2rem;
-  margin-left: 2rem;
 }
 
 #contact {
@@ -394,6 +399,7 @@ header {
 #map iframe {
   width: 100%;
   background-color: rgb(87, 87, 87);
+  margin-bottom: -4px;
 }
 
 #footernav {
